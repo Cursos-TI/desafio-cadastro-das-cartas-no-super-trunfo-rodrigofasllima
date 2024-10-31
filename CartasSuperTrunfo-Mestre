@@ -1,25 +1,36 @@
 #include <stdio.h>
 
+// Definindo novos tipos de variaveis
+typedef unsigned int    uint;
+typedef unsigned char   uchar;
+
+// strutura da carta
+typedef struct CartasSuperTrunfo {
+        uchar    
+            estado,
+            codigo[4],
+            nome[50];
+        uint
+            populacao,
+            nPontosTuristicos;
+        float
+            area,
+            pib;
+
+} CartasSuperTrunfo;
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
 float calcularDiv(float, float);
+CartasSuperTrunfo cadastro(void);
+void exibir(CartasSuperTrunfo);
 
 int main() {
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-        char    
-            estado,
-            codigo[4],
-            nome[50];
-        int
-            populacao,
-            nPontosTuristicos;
-        float
-            area,
-            pib;
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
