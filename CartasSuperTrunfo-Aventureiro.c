@@ -5,7 +5,7 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-
+float calcularDiv(float, float);
 
 int main() {
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
@@ -62,4 +62,9 @@ int main() {
         printf("Ponto Turistico:\t%50.0i\n\n\n", nPontosTuristicos);
     
     return 0;
+}
+
+float calcularDiv(float dividendo, float divisor) {
+
+    return dividendo / divisor;
 }
