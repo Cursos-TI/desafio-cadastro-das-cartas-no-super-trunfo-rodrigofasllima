@@ -53,13 +53,13 @@ int main() {
   
         
         printf("\n\n");      
-        printf("\nEstado:\t\t\t%50c\n", estado);
-        printf("Codigo:\t\t\t%50s\n", codigo);
-        printf("Cidade:\t\t\t%50s\n", nome);
-        printf("População:\t\t%50.3i\n", populacao);
-        printf("Are em Km²:\t\t%50.3f\n", area);
-        printf("PIB em Bilhões R$:\t%50.3f\n", pib);
-        printf("Ponto Turistico:\t%50.0i\n\n\n", nPontosTuristicos);
+        printf("\nEstado:\t\t\t%20c\n", estado);
+        printf("Codigo:\t\t\t%20s\n", codigo);
+        printf("Cidade:\t\t\t%20s\n", nome);
+        printf("População:\t\t%20.3i\n", populacao);
+        printf("Are em Km²:\t\t%20.3f\n", area);
+        printf("PIB em Bilhões R$:\t%20.3f\n", pib);
+        printf("Ponto Turistico:\t%20.0i\n\n\n", nPontosTuristicos);
     
     return 0;
 }

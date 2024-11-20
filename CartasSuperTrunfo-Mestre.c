@@ -17,7 +17,8 @@ typedef struct CartasSuperTrunfo {
             area,
             dencidade,
             pib,
-            pibPCapita;
+            pibPCapita,
+            super;
 
 } CartasSuperTrunfo;
 
@@ -61,11 +62,13 @@ int main() {
     return 0;
 }
 
+// Função para dividir 2 valores..
 float calcularDiv(float dividendo, float divisor) {
 
     return dividendo / divisor;
 }
 
+// Função de cadastro...
 CartasSuperTrunfo cadastro(void) {
     CartasSuperTrunfo
         carta;
@@ -91,22 +94,26 @@ CartasSuperTrunfo cadastro(void) {
 
         carta.dencidade = calcularDiv(carta.populacao, carta.area);
         carta.pibPCapita = calcularDiv(carta.pib * 1000000000, (float)carta.populacao);
+//        carta.super = (float)carta.estado + (float)carta.codigo + carta.dencidade + (float)carta.estado + (float)carta.nome +
+//            (float)carta.nPontosTuristicos + carta.pib + carta.pibPCapita + (float)carta.populacao;
         getchar();
     return carta;
 }
 
+// Função que exibe cartas.....
 void exibir(CartasSuperTrunfo carta1, CartasSuperTrunfo carta2){
 
-        printf("\n\n");      
-        printf("\nEstado:\t\t\t%10d\n", carta1.estado > carta2.estado);
-        printf("Codigo:\t\t\t%10d\n", carta1.codigo > carta2.codigo);
-        printf("Cidade:\t\t\t%10d\n", carta1.nome > carta2.nome);
-        printf("População:\t\t%10d\n", carta1.populacao > carta2.populacao);
-        printf("Are em Km²:\t\t%10d\n", carta1.area > carta2.area);
-        printf("Dencidade Populacional:\t%10d\n",carta1.dencidade < carta2.dencidade);
-        printf("PIB em Bilhões R$:\t%10d\n", carta1.pib > carta2.pib);
-        printf("PIB per capita R$:\t%10d\n", carta1.pibPCapita > carta2.pibPCapita);
-        printf("Ponto Turistico:\t%10d\n\n\n", carta1.nPontosTuristicos > carta2.nPontosTuristicos);
-
+    printf("\n\n");      
+    printf("\nEstado:\t\t\t%10d\n", carta1.estado > carta2.estado);
+    printf("Codigo:\t\t\t%10d\n", carta1.codigo > carta2.codigo);
+    printf("Cidade:\t\t\t%10d\n", carta1.nome > carta2.nome);
+    printf("População:\t\t%10d\n", carta1.populacao > carta2.populacao);
+    printf("Are em Km²:\t\t%10d\n", carta1.area > carta2.area);
+    printf("Dencidade Populacional:\t%10d\n",carta1.dencidade < carta2.dencidade);
+    printf("PIB em Bilhões R$:\t%10d\n", carta1.pib > carta2.pib);
+    printf("PIB per capita R$:\t%10d\n", carta1.pibPCapita > carta2.pibPCapita);
+    printf("Ponto Turistico:\t%10d\n", carta1.nPontosTuristicos > carta2.nPontosTuristicos);
+//    printf("Super:\t\t%10\n", carta1.super > carta2.super);
+    printf("\n\n");
 
 }
